@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #29303b;
+}
+
+.wrapper {
+	padding: 50px;
+	width: 100vw;
+	background-image: linear-gradient(#3f4b59, #333d46);
+	color: #fff;
+	text-align: center;
+	border: 1px solid #1c232d;
+	border-radius: 25px;
+	box-shadow: 0 0 50px #1d1f20;
+}
+
+.wrapper h1 {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.wrapper p {
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 200;
+}
+.app-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-left,
+.section-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.app-body input {
+	margin-bottom: 10px;
+	width: 100%;
+	font-size: 60px;
+}
+
+.app-body input,
+.app-body select {
+	color: #fff;
+	border: none;
+	background: none;
+	text-align: center;
+}
+
+.app-body select {
+	padding: 10px 20px;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.app-body input:focus,
+.app-body select:focus {
+	outline: none;
+	color: rgb(67, 171, 255);
+}
+
+.app-body option {
+	color: #333d46;
+}
+
+.swap {
+	margin: 5px;
+	padding: 5px 50px;
+	background-image: linear-gradient(45deg, #2b89e7, #11e763);
+	font-size: 25px;
+	border: none;
+	border-radius: 35px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.swap:focus {
+	outline: none;
+	background-image: linear-gradient(45deg, #317fcc, #1fc06a);
+}
+.wrapper .rate-info {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+/*  */
+/*  */
+@media (min-width: 800px) {
+	.wrapper {
+		width: 800px;
+	}
+	.app-body {
+		flex-direction: row;
+	}
+	.swap {
+		align-self: flex-end;
+	}
+}
