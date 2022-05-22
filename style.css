@@ -16,6 +16,7 @@ body {
 .wrapper {
 	padding: 50px;
 	width: 100vw;
+	max-height: 100vh;
 	background-image: linear-gradient(#3f4b59, #333d46);
 	color: #fff;
 	text-align: center;
@@ -79,11 +80,11 @@ body {
 
 .swap {
 	margin: 5px;
-	padding: 5px 50px;
+	padding: 5px 100px;
 	background-image: linear-gradient(45deg, #2b89e7, #11e763);
 	font-size: 25px;
 	border: none;
-	border-radius: 35px;
+	border-radius: 20px;
 	color: #fff;
 	cursor: pointer;
 }
@@ -95,6 +96,17 @@ body {
 .wrapper .rate-info {
 	margin-top: 30px;
 	margin-bottom: 0;
+}
+.swap .calculate {
+	color: #333;
+	font-weight: bold;
+}
+
+.update-date-info {
+	margin-top: 10px;
+	color: #2892db;
+	/* font-size: 30px !important; */
+	font-weight: bold !important;
 }
 /*  */
 /*  */
