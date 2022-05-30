@@ -20,9 +20,10 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
+
 .wrapper {
 	padding: 50px;
-	width: 100vw;
+	max-width: 100vw;
 	max-height: 100vh;
 	background-image: linear-gradient(#3f4b59, #333d46);
 	color: #fff;
@@ -39,7 +40,7 @@ input::-webkit-inner-spin-button {
 
 .wrapper p {
 	font-size: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	font-weight: 200;
 }
 
@@ -88,7 +89,7 @@ input::-webkit-inner-spin-button {
 
 .swap {
 	margin: 5px;
-	padding: 5px 100px;
+	padding: 5px 50px;
 	background-image: linear-gradient(45deg, #0886fb, #24d098);
 	font-size: 25px;
 	border: none;
@@ -112,14 +113,14 @@ input::-webkit-inner-spin-button {
 
 .update-date-info {
 	margin-top: 10px;
+	font-weight: bold !important;
+}
+.update-date {
+	font-size: 1.8rem !important;
 	color: #2892db;
-	/* font-size: 30px !important; */
 	font-weight: bold !important;
 }
 
-.day-info {
-	font-size: 1.8rem !important;
-}
 /*  */
 /*  */
 @media (min-width: 800px) {

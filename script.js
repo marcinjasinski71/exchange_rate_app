@@ -20,7 +20,7 @@ const calculate = () => {
 			rateInfo.textContent = `1 ${currency1} = ${rate.toFixed(4)} ${currency2}`;
 			amountTwo.value = (amountOne.value * rate).toFixed(2);
 			const updateDateInfo = data.time_last_update_utc;
-			updateDate.textContent = updateDateInfo.slice(0, -5);
+			updateDate.textContent = updateDateInfo.slice(0, -14);
 		});
 };
 calculate();
