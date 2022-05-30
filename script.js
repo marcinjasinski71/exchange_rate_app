@@ -18,7 +18,7 @@ const calculate = () => {
 
 			const rate = data.conversion_rate;
 			rateInfo.textContent = `1 ${currency1} = ${rate.toFixed(4)} ${currency2}`;
-			amountTwo.value = amountOne.value * rate.toFixed(2);
+			amountTwo.value = (amountOne.value * rate).toFixed(2);
 			const updateDateInfo = data.time_last_update_utc;
 			updateDate.textContent = updateDateInfo.slice(0, -5);
 		});
@@ -26,3 +26,9 @@ const calculate = () => {
 calculate();
 
 swapBtn.addEventListener('click', calculate);
+document.addEventListener('keypress', function (e) {
+	if (e.key === 'Enter') {
+		calculate();
+	}
+});
+currencyTwo.addEventListener('change', calculate);
