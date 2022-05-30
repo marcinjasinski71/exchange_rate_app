@@ -10,7 +10,9 @@ body {
 	align-items: center;
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #29303b;
+	background-image: url('./background-img.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 input::-webkit-outer-spin-button,
@@ -40,6 +42,7 @@ input::-webkit-inner-spin-button {
 	margin-bottom: 20px;
 	font-weight: 200;
 }
+
 .app-body {
 	display: flex;
 	flex-direction: column;
@@ -86,7 +89,7 @@ input::-webkit-inner-spin-button {
 .swap {
 	margin: 5px;
 	padding: 5px 100px;
-	background-image: linear-gradient(45deg, #2b89e7, #11e763);
+	background-image: linear-gradient(45deg, #0886fb, #24d098);
 	font-size: 25px;
 	border: none;
 	border-radius: 20px;
@@ -112,6 +115,10 @@ input::-webkit-inner-spin-button {
 	color: #2892db;
 	/* font-size: 30px !important; */
 	font-weight: bold !important;
+}
+
+.day-info {
+	font-size: 1.8rem !important;
 }
 /*  */
 /*  */
